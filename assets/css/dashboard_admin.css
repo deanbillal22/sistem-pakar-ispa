@@ -1,0 +1,739 @@
+/* ==========================================================
+   DASHBOARD ADMIN
+   Expert System ISPA
+========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #2e8b57;
+  --primary-dark: #1d6f42;
+  --secondary: #f5f7fb;
+  --white: #ffffff;
+
+  --green: #28c76f;
+  --blue: #36a2eb;
+  --purple: #7367f0;
+  --orange: #ff9f43;
+
+  --text: #2c3e50;
+  --text-light: #6c757d;
+
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  --radius: 18px;
+}
+
+body {
+  background: #eef3f8;
+  color: var(--text);
+}
+
+/* ==========================================================
+WRAPPER
+========================================================== */
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ==========================================================
+CONTENT
+========================================================== */
+
+.main-content {
+  flex: 1;
+
+  margin-left: 260px;
+
+  padding: 30px;
+}
+
+/* ==========================================================
+PAGE HEADER
+========================================================== */
+
+.page-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+/* ==========================================================
+CARD GRID
+========================================================== */
+
+.card-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+/* ==========================================================
+CARD
+========================================================== */
+
+.card {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow: var(--shadow);
+
+  transition: 0.35s;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  font-size: 34px;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #777;
+
+  font-size: 15px;
+}
+
+.card i {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #fff;
+
+  font-size: 28px;
+}
+
+/* ==========================================================
+CARD COLOR
+========================================================== */
+
+.card.green i {
+  background: var(--green);
+}
+
+.card.blue i {
+  background: var(--blue);
+}
+
+.card.orange i {
+  background: var(--orange);
+}
+
+.card.purple i {
+  background: var(--purple);
+}
+
+/* ==========================================================
+TOTAL BOX
+========================================================== */
+
+.total-box {
+  background: linear-gradient(135deg, #2e8b57, #48b977);
+
+  color: white;
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  margin-bottom: 30px;
+
+  box-shadow: var(--shadow);
+}
+
+.total-box h1 {
+  font-size: 50px;
+
+  font-weight: 700;
+}
+
+.total-box span {
+  font-size: 18px;
+
+  opacity: 0.95;
+}
+
+/* ==========================================================
+CHART
+========================================================== */
+
+.chart-card {
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  box-shadow: var(--shadow);
+
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin-bottom: 25px; /* ==========================================================
+TABLE
+========================================================== */
+
+  .table-card {
+    background: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+    padding: 25px;
+
+    overflow: hidden;
+  }
+
+  .table-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  .table-header h3 {
+    font-size: 20px;
+
+    font-weight: 600;
+  }
+
+  .table-header a {
+    text-decoration: none;
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+  }
+
+  .table-header a:hover {
+    color: var(--primary-dark);
+  }
+
+  table {
+    width: 100%;
+
+    border-collapse: collapse;
+  }
+
+  table thead {
+    background: #f7f9fc;
+  }
+
+  table th {
+    padding: 18px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    color: #444;
+
+    font-weight: 600;
+  }
+
+  table td {
+    padding: 18px;
+
+    border-top: 1px solid #ececec;
+
+    color: #666;
+
+    font-size: 14px;
+  }
+
+  table tbody tr {
+    transition: 0.25s;
+  }
+
+  table tbody tr:hover {
+    background: #f7fff8;
+  }
+
+  /* ==========================================================
+BADGE
+========================================================== */
+
+  .badge {
+    padding: 6px 12px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+  }
+
+  .badge.green {
+    background: #28c76f;
+  }
+
+  .badge.orange {
+    background: #ff9f43;
+  }
+
+  .badge.red {
+    background: #ea5455;
+  }
+
+  /* ==========================================================
+BUTTON
+========================================================== */
+
+  .btn {
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    background: var(--primary);
+
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+
+  /* ==========================================================
+SCROLLBAR
+========================================================== */
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e9eef3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2e8b57;
+
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1d6f42;
+  }
+
+  /* ==========================================================
+ANIMATION
+========================================================== */
+
+  .card,
+  .chart-card,
+  .table-card,
+  .total-box {
+    animation: fadeUp 0.5s ease;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+  }
+
+  /* ==========================================================
+RESPONSIVE
+========================================================== */
+
+  @media (max-width: 1200px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+
+      padding: 20px;
+    }
+
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+
+    .page-header {
+      flex-direction: column;
+
+      align-items: flex-start;
+
+      gap: 15px;
+    }
+
+    .chart-card {
+      overflow-x: auto;
+    }
+
+    .table-card {
+      overflow-x: auto;
+    }
+
+    table {
+      min-width: 700px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .page-header h2 {
+      font-size: 24px;
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 28px;
+    }
+
+    .total-box {
+      padding: 25px;
+    }
+
+    .total-box h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+#diagnosisChart {
+  width: 100%;
+
+  height: 350px;
+}
+/* ===========================
+SIDEBAR
+=========================== */
+
+.sidebar {
+  position: fixed;
+
+  left: 0;
+
+  top: 0;
+
+  width: 260px;
+
+  height: 100vh;
+
+  background: linear-gradient(180deg, #2e8b57, #1e6c43);
+
+  color: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.12);
+
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  padding: 30px 25px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logo-icon {
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 24px;
+
+  margin-right: 15px;
+}
+
+.logo-text h2 {
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.logo-text span {
+  font-size: 13px;
+
+  opacity: 0.8;
+}
+
+.menu {
+  padding: 20px 0;
+
+  list-style: none;
+
+  flex: 1;
+
+  overflow: auto;
+}
+
+.menu-title {
+  padding: 18px 30px 10px;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  opacity: 0.6;
+
+  font-weight: 600;
+}
+
+.menu li {
+  margin: 5px 15px;
+}
+
+.menu a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px 18px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  border-radius: 14px;
+
+  transition: 0.3s;
+
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.menu a.active {
+  background: #fff;
+
+  color: #2e8b57;
+
+  font-weight: 600;
+}
+
+.menu a i {
+  width: 22px;
+
+  font-size: 17px;
+
+  text-align: center;
+}
+
+.logout {
+  padding: 25px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logout a {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  background: #ea5455;
+
+  color: #fff;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.logout a:hover {
+  transform: translateY(-2px);
+
+  background: #d63b3d;
+}
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar {
+  height: 75px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 0 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-left h3 {
+  font-size: 26px;
+
+  color: #2d3748;
+
+  font-weight: 700;
+}
+
+.navbar-left span {
+  font-size: 14px;
+
+  color: #777;
+}
+
+.navbar-right {
+  display: flex;
+
+  align-items: center;
+}
+
+.admin-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.avatar {
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: #2e8b57;
+
+  color: #fff;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: 700;
+
+  font-size: 18px;
+}
+
+.admin-profile h4 {
+  margin: 0;
+
+  font-size: 15px;
+}
+
+.admin-profile small {
+  color: #888;
+}

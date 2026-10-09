@@ -1,0 +1,57 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eef5ff;
+}
+
+.card {
+  border-radius: 25px;
+}
+
+.progress {
+  height: 22px;
+
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background: #2563eb;
+
+  font-weight: 600;
+}
+
+.symptom {
+  background: #ffffff;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #e5e7eb;
+
+  transition: 0.3s;
+}
+
+.symptom:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-select {
+  height: 50px;
+
+  border-radius: 12px;
+}
+
+.btn {
+  padding: 12px 28px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+}

@@ -1,0 +1,28 @@
+Primary
+#2563EB
+Blue
+
+Secondary
+
+#10B981
+
+Green
+
+Secondary
+
+#10B981
+
+Green
+
+Danger
+
+#EF4444
+
+Text
+
+#1E293B
+
+
+font 
+- Poppins
+- Inter
